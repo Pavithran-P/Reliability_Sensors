@@ -1,0 +1,70 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu May 13 17:43:47 2021
+# Process ID: 2808
+# Current directory: C:/Tutorials/Vivado/parvez_ro_prepost
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18756 C:\Tutorials\Vivado\parvez_ro_prepost\parvez_ro_prepost.xpr
+# Log file: C:/Tutorials/Vivado/parvez_ro_prepost/vivado.log
+# Journal file: C:/Tutorials/Vivado/parvez_ro_prepost\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Tutorials/Vivado/parvez_ro_prepost/parvez_ro_prepost.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Tutorials/Vivado/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:05 . Memory (MB): peak = 1197.805 ; gain = 0.000
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Thu May 13 17:46:30 2021] Launched synth_1...
+Run output will be captured here: C:/Tutorials/Vivado/parvez_ro_prepost/parvez_ro_prepost.runs/synth_1/runme.log
+[Thu May 13 17:46:30 2021] Launched impl_1...
+Run output will be captured here: C:/Tutorials/Vivado/parvez_ro_prepost/parvez_ro_prepost.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.135 . Memory (MB): peak = 1555.012 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 874 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.739 . Memory (MB): peak = 1912.895 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.739 . Memory (MB): peak = 1912.895 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1912.895 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 15 instances were transformed.
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 15 instances
+
+open_run: Time (s): cpu = 00:00:23 ; elapsed = 00:00:18 . Memory (MB): peak = 2041.352 ; gain = 486.340
+open_bd_design {C:/Tutorials/Vivado/parvez_ro_prepost/parvez_ro_prepost.srcs/sources_1/bd/design_1/design_1.bd}
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_wr_socket' specified in the portmap, is not found on the block! 
+Adding component instance block -- xilinx.com:user:AXI_RO:1.0 - RO0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding component instance block -- xilinx.com:user:AXI_RO:1.0 - RO1
+Adding component instance block -- xilinx.com:user:AXI_RO:1.0 - RO2
+Adding component instance block -- xilinx.com:user:AXI_RO:1.0 - RO3
+Adding component instance block -- xilinx.com:user:AXI_RO:1.0 - RO4
+Adding component instance block -- xilinx.com:ip:xadc_wiz:3.3 - Temp_sensor
+Successfully read diagram <design_1> from BD file <C:/Tutorials/Vivado/parvez_ro_prepost/parvez_ro_prepost.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2331.805 ; gain = 51.246
+write_bd_tcl -force C:/Tutorials/Vivado/parvez_ro_prepost/design_1.tcl
+INFO: [BD 5-148] Tcl file written out <C:/Tutorials/Vivado/parvez_ro_prepost/design_1.tcl>.
+

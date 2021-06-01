@@ -1,0 +1,82 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.22357",
+   "Default View_TopLeft":"-145,1283",
+   "ExpandedHierarchyInLayout":"",
+   "No Loops_ScaleFactor":"0.558824",
+   "No Loops_TopLeft":"-551,0",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:9.0 non-TLS-threadsafe
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 5 -x 1540 -y 1630 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 5 -x 1540 -y 1660 -defaultsOSRD
+preplace inst heater -pg 1 -lvl 4 -x 1340 -y 2030 -defaultsOSRD
+preplace inst xadc_wiz_0 -pg 1 -lvl 4 -x 1340 -y 2220 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 2 -x 420 -y 1390 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 3 -x 820 -y 1100 -defaultsOSRD
+preplace inst rst_ps7_0_50M -pg 1 -lvl 2 -x 420 -y 1900 -defaultsOSRD
+preplace inst LowFreq_100Hz -pg 1 -lvl 4 -x 1340 -y 1550 -defaultsOSRD
+preplace inst BTI_RO2 -pg 1 -lvl 4 -x 1340 -y 1150 -defaultsOSRD
+preplace inst clk_wiz_100MHz -pg 1 -lvl 3 -x 820 -y 430 -defaultsOSRD
+preplace inst clk_wiz_10MHz -pg 1 -lvl 3 -x 820 -y 250 -defaultsOSRD
+preplace inst clk_wiz_200MHz -pg 1 -lvl 3 -x 820 -y 590 -defaultsOSRD
+preplace inst RO1_BTI0 -pg 1 -lvl 1 -x 110 -y 1460 -defaultsOSRD
+preplace inst RO2_BTI1 -pg 1 -lvl 1 -x 110 -y 1630 -defaultsOSRD
+preplace inst RO0 -pg 1 -lvl 1 -x 110 -y 1280 -defaultsOSRD
+preplace inst RO3 -pg 1 -lvl 1 -x 110 -y 1140 -defaultsOSRD
+preplace inst RO4 -pg 1 -lvl 1 -x 110 -y 1000 -defaultsOSRD
+preplace inst BTI_RO1 -pg 1 -lvl 4 -x 1340 -y 990 -defaultsOSRD
+preplace inst HCI_0 -pg 1 -lvl 4 -x 1340 -y 1770 -defaultsOSRD
+preplace inst HCI_1 -pg 1 -lvl 4 -x 1340 -y 1340 -defaultsOSRD
+preplace inst HCI_2 -pg 1 -lvl 4 -x 1340 -y 100 -defaultsOSRD
+preplace inst HCI_3 -pg 1 -lvl 4 -x 1340 -y 280 -defaultsOSRD
+preplace inst HCI_4 -pg 1 -lvl 4 -x 1340 -y 460 -defaultsOSRD
+preplace inst HCI_5 -pg 1 -lvl 4 -x 1340 -y 640 -defaultsOSRD
+preplace inst HCI_6 -pg 1 -lvl 4 -x 1340 -y 820 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 4 -280 1370 220 1510 640 140 1130
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 2 230 1530 610
+preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 0 4 -270 1380 230 1520 670 160 1140
+preplace netloc processing_system7_0_FCLK_CLK1 1 2 2 620 1590 1150J
+preplace netloc LowFreq100Hz_ClkGen_0_out_100hz_10 1 3 2 1160 1670 1490
+preplace netloc LowFreq100Hz_ClkGen_0_out_100hz_90 1 3 2 1180 1870 1480
+preplace netloc LowFreq100Hz_ClkGen_0_out_100hz_30 1 3 2 1170 1440 1470
+preplace netloc LowFreq100Hz_ClkGen_0_out_100hz_70 1 3 2 1180 1650 1470
+preplace netloc clk_wiz_1_clk10_10MHz 1 3 1 1000 80n
+preplace netloc clk_wiz_1_clk90_10MHz 1 3 1 1040 100n
+preplace netloc clk_wiz_1_clk30_10MHz 1 3 1 N 260
+preplace netloc clk_wiz_1_clk70_10MHz 1 3 1 N 280
+preplace netloc clk_wiz_0_clk10_100MHz 1 3 1 1160 400n
+preplace netloc clk_wiz_0_clk90_100MHz 1 3 1 1000 420n
+preplace netloc clk_wiz_0_clk30_100MHz 1 3 1 1150 440n
+preplace netloc clk_wiz_0_clk80_100MHz 1 3 1 960 460n
+preplace netloc processing_system7_0_FCLK_CLK2 1 2 1 650 590n
+preplace netloc clk_wiz_250MHz_clk30_200MHz 1 3 1 1120 580n
+preplace netloc clk_wiz_250MHz_clk70_200MHz 1 3 1 1100 600n
+preplace netloc ps7_0_axi_periph_M07_AXI 1 3 1 1010 1070n
+preplace netloc ps7_0_axi_periph_M09_AXI 1 3 1 1020 60n
+preplace netloc ps7_0_axi_periph_M13_AXI 1 3 1 1150 780n
+preplace netloc ps7_0_axi_periph_M16_AXI 1 0 4 -260 340 NJ 340 NJ 340 980
+preplace netloc ps7_0_axi_periph_M08_AXI 1 3 1 1030 1090n
+preplace netloc ps7_0_axi_periph_M05_AXI 1 3 1 1070 1030n
+preplace netloc ps7_0_axi_periph_M00_AXI 1 3 1 1060 930n
+preplace netloc processing_system7_0_FIXED_IO 1 2 3 630J 1660 NJ 1660 NJ
+preplace netloc ps7_0_axi_periph_M02_AXI 1 0 4 -250 1550 210J 1580 NJ 1580 1000
+preplace netloc ps7_0_axi_periph_M10_AXI 1 3 1 1080 240n
+preplace netloc ps7_0_axi_periph_M17_AXI 1 0 4 -250 520 NJ 520 NJ 520 970
+preplace netloc ps7_0_axi_periph_M14_AXI 1 0 4 -250 1540 NJ 1540 610J 1570 960
+preplace netloc ps7_0_axi_periph_M06_AXI 1 3 1 1050 1050n
+preplace netloc ps7_0_axi_periph_M11_AXI 1 3 1 1090 420n
+preplace netloc ps7_0_axi_periph_M15_AXI 1 0 4 -290 150 NJ 150 NJ 150 990
+preplace netloc processing_system7_0_M_AXI_GP0 1 2 1 660 700n
+preplace netloc ps7_0_axi_periph_M04_AXI 1 3 1 1100 960n
+preplace netloc processing_system7_0_DDR 1 2 3 680J 1560 980J 1450 1500J
+preplace netloc ps7_0_axi_periph_M03_AXI 1 3 1 1040 990n
+preplace netloc ps7_0_axi_periph_M12_AXI 1 3 1 1110 600n
+levelinfo -pg 1 -310 110 420 820 1340 1540
+pagesize -pg 1 -db -bbox -sgen -310 -20 1650 2630
+"
+}
+{
+   "da_axi4_cnt":"23",
+   "da_board_cnt":"3",
+   "da_ps7_cnt":"1"
+}
