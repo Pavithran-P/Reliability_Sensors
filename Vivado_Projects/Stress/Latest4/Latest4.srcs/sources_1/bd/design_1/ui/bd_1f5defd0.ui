@@ -1,0 +1,91 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.208491",
+   "Default View_TopLeft":"-2302,0",
+   "ExpandedHierarchyInLayout":"",
+   "No Loops_ScaleFactor":"0.558824",
+   "No Loops_TopLeft":"-551,0",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 4 -x 1210 -y 1330 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 4 -x 1210 -y 1360 -defaultsOSRD
+preplace inst heater -pg 1 -lvl 3 -x 1040 -y 2720 -defaultsOSRD
+preplace inst xadc_wiz_0 -pg 1 -lvl 3 -x 1040 -y 3070 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x 220 -y 1420 -defaultsOSRD
+preplace inst rst_ps7_0_50M -pg 1 -lvl 1 -x 220 -y 1660 -defaultsOSRD
+preplace inst LowFreq_100Hz -pg 1 -lvl 3 -x 1040 -y 1050 -defaultsOSRD
+preplace inst BTI_RO2 -pg 1 -lvl 3 -x 1040 -y 1610 -defaultsOSRD
+preplace inst clk_wiz_100MHz -pg 1 -lvl 2 -x 590 -y 610 -defaultsOSRD
+preplace inst clk_wiz_10MHz -pg 1 -lvl 2 -x 590 -y 250 -defaultsOSRD
+preplace inst clk_wiz_200MHz -pg 1 -lvl 2 -x 590 -y 2870 -defaultsOSRD
+preplace inst BTI_RO1 -pg 1 -lvl 3 -x 1040 -y 1450 -defaultsOSRD
+preplace inst HCI_0 -pg 1 -lvl 3 -x 1040 -y 1250 -defaultsOSRD
+preplace inst HCI_1 -pg 1 -lvl 3 -x 1040 -y 840 -defaultsOSRD
+preplace inst HCI_2 -pg 1 -lvl 3 -x 1040 -y 100 -defaultsOSRD
+preplace inst HCI_3 -pg 1 -lvl 3 -x 1040 -y 280 -defaultsOSRD
+preplace inst HCI_4 -pg 1 -lvl 3 -x 1040 -y 460 -defaultsOSRD
+preplace inst HCI_5 -pg 1 -lvl 3 -x 1040 -y 640 -defaultsOSRD
+preplace inst HCI_6 -pg 1 -lvl 3 -x 1040 -y 2880 -defaultsOSRD
+preplace inst RO2_0 -pg 1 -lvl 3 -x 1040 -y 2570 -defaultsOSRD
+preplace inst RO2_1 -pg 1 -lvl 3 -x 1040 -y 1770 -defaultsOSRD
+preplace inst RO2_2 -pg 1 -lvl 3 -x 1040 -y 1930 -defaultsOSRD
+preplace inst RO2_3 -pg 1 -lvl 3 -x 1040 -y 2090 -defaultsOSRD
+preplace inst RO2_4 -pg 1 -lvl 3 -x 1040 -y 2250 -defaultsOSRD
+preplace inst RO2_5 -pg 1 -lvl 3 -x 1040 -y 2410 -defaultsOSRD
+preplace inst clk_div_0 -pg 1 -lvl 2 -x 590 -y 2460 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 590 -y 1880 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 20 1550 450 1370 870
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 30 1560 410
+preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 1 2 440 2560 880
+preplace netloc processing_system7_0_FCLK_CLK1 1 1 2 410J 1380 790
+preplace netloc LowFreq100Hz_ClkGen_0_out_100hz_10 1 2 2 890 940 1170
+preplace netloc LowFreq100Hz_ClkGen_0_out_100hz_90 1 2 2 900 1150 1170
+preplace netloc LowFreq100Hz_ClkGen_0_out_100hz_30 1 2 2 900 740 1190
+preplace netloc LowFreq100Hz_ClkGen_0_out_100hz_70 1 2 2 900 950 1180
+preplace netloc clk_wiz_1_clk10_10MHz 1 2 1 730 80n
+preplace netloc clk_wiz_1_clk90_10MHz 1 2 1 740 100n
+preplace netloc clk_wiz_1_clk30_10MHz 1 2 1 N 260
+preplace netloc clk_wiz_1_clk70_10MHz 1 2 1 N 280
+preplace netloc clk_wiz_0_clk10_100MHz 1 2 1 760 440n
+preplace netloc clk_wiz_0_clk90_100MHz 1 2 1 770 460n
+preplace netloc clk_wiz_0_clk30_100MHz 1 2 1 N 620
+preplace netloc clk_wiz_0_clk80_100MHz 1 2 1 N 640
+preplace netloc processing_system7_0_FCLK_CLK2 1 1 1 430 1450n
+preplace netloc clk_wiz_250MHz_clk30_200MHz 1 2 1 N 2860
+preplace netloc clk_wiz_250MHz_clk70_200MHz 1 2 1 N 2880
+preplace netloc processing_system7_0_FCLK_CLK3 1 1 2 420 2570 910J
+preplace netloc clk_div_0_clk_1 1 2 1 740 1760n
+preplace netloc clk_div_0_clk_5 1 2 1 840 1920n
+preplace netloc clk_div_0_clk_9 1 2 1 890 2080n
+preplace netloc clk_div_0_clk_13 1 2 1 900 2240n
+preplace netloc clk_div_0_clk_14 1 2 1 910 2400n
+preplace netloc processing_system7_0_FIXED_IO 1 1 3 410J 1360 NJ 1360 NJ
+preplace netloc processing_system7_0_DDR 1 1 3 NJ 1350 NJ 1350 1180J
+preplace netloc ps7_0_axi_periph_M19_AXI 1 2 1 730 2070n
+preplace netloc ps7_0_axi_periph_M12_AXI 1 2 1 860 1020n
+preplace netloc ps7_0_axi_periph_M05_AXI 1 2 1 810 800n
+preplace netloc ps7_0_axi_periph_M11_AXI 1 2 1 820 1910n
+preplace netloc ps7_0_axi_periph_M14_AXI 1 2 1 890 1740n
+preplace netloc ps7_0_axi_periph_M06_AXI 1 2 1 750 60n
+preplace netloc ps7_0_axi_periph_M02_AXI 1 2 1 820 1420n
+preplace netloc ps7_0_axi_periph_M07_AXI 1 2 1 780 240n
+preplace netloc ps7_0_axi_periph_M15_AXI 1 2 1 900 1900n
+preplace netloc ps7_0_axi_periph_M16_AXI 1 2 1 860 2010n
+preplace netloc ps7_0_axi_periph_M13_AXI 1 2 1 780 1950n
+preplace netloc ps7_0_axi_periph_M18_AXI 1 2 1 750 2050n
+preplace netloc ps7_0_axi_periph_M03_AXI 1 2 1 850 1580n
+preplace netloc ps7_0_axi_periph_M09_AXI 1 2 1 840 600n
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 430 1390n
+preplace netloc ps7_0_axi_periph_M04_AXI 1 2 1 830 1210n
+preplace netloc ps7_0_axi_periph_M10_AXI 1 2 1 850 1890n
+preplace netloc ps7_0_axi_periph_M17_AXI 1 2 1 760 2030n
+preplace netloc ps7_0_axi_periph_M08_AXI 1 2 1 800 420n
+levelinfo -pg 1 0 220 590 1040 1210
+pagesize -pg 1 -db -bbox -sgen 0 0 1320 3180
+"
+}
+{
+   "da_axi4_cnt":"43",
+   "da_board_cnt":"3",
+   "da_ps7_cnt":"1"
+}
